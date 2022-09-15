@@ -1,29 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * more_numbers - prints 01234567891011121314\n x10
+ * more_numbers - Print numbers between 0 to 14 incl.
  *
- * Return: void
+ * Return: Void.
  */
-
-
 void more_numbers(void)
 {
-	char a, b, c, i;
+	int i;
+	int x;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		for (c = 0; c <= 14; c++)
+		i = 0;
+		while (i <= 14)
 		{
-			if (c < 10)
-				b = c;
-			else
+			if (i >= 10)
 			{
-				a = c / 10; b = c % 10;
-				_putchar('0' + a);
+				_putchar(i / 10 + '0');
 			}
-			_putchar('0' + b);
+				_putchar(i % 10 + '0');
+			i++;
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
