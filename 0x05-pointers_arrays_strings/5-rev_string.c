@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - reverses a string
- * @s: holi
+ * @s: string to reverse
  *
  */
 void rev_string(char *s)
