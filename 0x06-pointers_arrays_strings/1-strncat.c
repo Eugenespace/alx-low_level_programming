@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _strncat - concatenates two strings
+ *
+ *@src:Strings to be concatenated
+ *@dest:Strings to be concatenated
+ *@n: number of iterations
+ *
+ *Return: dest
+ */
+
+
+char *_strncat(char *dest, char *src, int n)
+{
+
+int a;
+int b;
+
+a = 0;
+
+while (dest[a] != 0)
+{
+a++;
+}
+
+b = 0;
+
+while (src[b] != 0 && b < n)
+{
+dest[a] = src[b];
+a++;
+b++;
+}
+return (dest);
+}
