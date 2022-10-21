@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * _strlen - finds the length of a string
